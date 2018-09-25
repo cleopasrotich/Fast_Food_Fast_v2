@@ -1,3 +1,5 @@
+[![Coverage Status](https://coveralls.io/repos/github/cleopasrotich/Fast_Food_Fast_v2/badge.svg?branch=develop)](https://coveralls.io/github/cleopasrotich/Fast_Food_Fast_v2?branch=develop)
+
 [![Build Status](https://travis-ci.org/cleopasrotich/Fast_Food_Fast_v2.svg?branch=develop)](https://travis-ci.org/cleopasrotich/Fast_Food_Fast_v2)
 
 # Fast Food Fast APIs
