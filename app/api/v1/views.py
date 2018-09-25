@@ -5,14 +5,14 @@ app = Flask(__name__)
 orders = []
 
 
-@app.route('/Fast_Food_Fast/api/v1/orders', methods=['GET'])
+@app.route('/fast_foods/api/v1/orders', methods=['GET'])
 def get_orders():
     return jsonify(
         {"orders": orders}
     )
 
 
-@app.route('/Fast_Food_Fast/api/v1/orders/<int:order_id>', methods=['GET'])
+@app.route('/fast_foods/api/v1/orders/<int:order_id>', methods=['GET'])
 def get_task(order_id):
     required_order = []
     for order in orders:
@@ -24,7 +24,7 @@ def get_task(order_id):
     return jsonify({'order': required_order[0]})
 
 
-@app.route('/Fast_Food_Fast/api/v1/orders', methods=['POST'])
+@app.route('/fast_foods/api/v1/orders', methods=['POST'])
 def place_order():
     if not request.json:  # or  'summary' in request.json:
         abort(404)
@@ -47,7 +47,7 @@ def place_order():
     }), 201
 
 
-@app.route('/Fast_Food_Fast/api/v1/orders/<int:order_id>', methods=['PUT'])
+@app.route('/fast_foods/api/v1/orders/<int:order_id>', methods=['PUT'])
 def edit_order(order_id):
     required_order = []
     for order in orders:
@@ -60,7 +60,7 @@ def edit_order(order_id):
     return jsonify({'orders': required_order[0]})
 
 
-@app.route('/Fast_Food_Fast/api/v1/orders/<int:order_id>', methods=['DELETE'])
+@app.route('/fast_foods/api/v1/orders/<int:order_id>', methods=['DELETE'])
 def remove_order(order_id):
     required_order = []
     for order in orders:
