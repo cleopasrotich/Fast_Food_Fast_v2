@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/cleopasrotich/Fast_Food_Fast_v2.svg?branch=develop)](https://travis-ci.org/cleopasrotich/Fast_Food_Fast_v2)
+
 # Fast Food Fast APIs
 
 Contains all APIs for the Fast food fast web application.
