@@ -8,7 +8,7 @@ class Config:
 
 class DevelopmentConfig(Config):
     DEBUG = True
-   # TESTING = False
+    TESTING = False
 
 
 class TestingConfig(Config):
@@ -16,13 +16,13 @@ class TestingConfig(Config):
     TESTING = True
 
 
-# class ProductionConfig(Config):
-#     pass
+class ProductionConfig(Config):
+    pass
 
 
 app_config = {
     "development": DevelopmentConfig,
-    "testing": TestingConfig
-    #"production": ProductionConfig,
-    #"default": DevelopmentConfig
+    "testing": TestingConfig,
+    "production": ProductionConfig,
+    "default": DevelopmentConfig
 }

@@ -29,3 +29,5 @@ class Testorders(unittest.TestCase):
         result = app.test_client()
         response = result.get('/fast_foods/api/v1/orders/2', content_type='application/json')
         self.assertTrue(response.status_code, 200)
+
+
