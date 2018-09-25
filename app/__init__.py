@@ -1,5 +1,4 @@
-from flask import Flask, app
-from instance.config import app_config
+from flask import Flask
 
 
 def create_app(config_name):
