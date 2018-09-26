@@ -1,6 +1,6 @@
 env/
 /__pycache__/*
 pics/
-*.pyc
+*.pyc .
 .pytest_cache/
 .vscode/
