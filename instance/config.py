@@ -1,5 +1,11 @@
+import os
+
+
 class Config:
     DEBUG = False
+    CSRF_ENABLED = True
+    SECRET = os.getenv('MY_SECRET')
+    SQLALCHEMY_DATABASE_URI = os.getenv('DATABASE_URL')
 
     @staticmethod
     def init_app(app):
@@ -14,10 +20,11 @@ class DevelopmentConfig(Config):
 class TestingConfig(Config):
     DEBUG = True
     TESTING = True
+    SQLALCHEMY_DATABASE_URI = 'postgresql://localhost/test_data'
 
 
 class ProductionConfig(Config):
-    pass
+    DEBUG = False
 
 
 app_config = {
